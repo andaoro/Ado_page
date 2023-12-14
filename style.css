@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    width: 100vw;
+    background-color: rgb(1, 34, 77);
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+header {
+    width: 100vw;
+}
+
+header img {
+    width: 100vw;
+    max-height: 100vh;
+}
+
+.logo {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.container {
+    width: 90vw;
+    height: auto;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.historia {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    flex: 1;
+}
+
+.historia img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+.historia span {
+    font-size: 30px;
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 45px;
+    color: goldenrod;
+}
+
+
+.artista_data {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(63, 86, 116);
+    padding: 2rem 4rem;
+    gap: 40px;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.artista_data article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.image_ado img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#nombre_artista {
+    color: goldenrod;
+    font-size: 55px;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.initial_data {
+    display: flex;
+    gap: 60px;
+}
+
+.spotify {
+    width: auto;
+}
+
+#top{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card_songs{
+    display: relative;
+}
+
+.card_songs_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    z-index: -1;
+}
+
+.card_songs_name{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: red;
+}
