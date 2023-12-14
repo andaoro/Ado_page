@@ -122,7 +122,7 @@ header img {
 }
 
 .card_songs{
-    display: relative;
+    position: relative;
 }
 
 .card_songs_image{
@@ -137,5 +137,7 @@ header img {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: red;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
 }

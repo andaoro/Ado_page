@@ -53,6 +53,7 @@ async function GetTopTracks() {
         const response = await fetch(url, options)
         const data = await response.json()
         const topSongs = document.getElementById('top')
+        console.log(data)
 
         if (data) {
             data.tracks.forEach(track => {
