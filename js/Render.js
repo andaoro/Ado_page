@@ -48,8 +48,7 @@ async function RenderTopTracks(){
                 image_card.src = track.album.images[0].url
                 song_name.innerHTML = track.name
                 
-
-
+                
                 //APPENDCHILDS
                 card_track.appendChild(image_card)
                 card_track.appendChild(song_name)

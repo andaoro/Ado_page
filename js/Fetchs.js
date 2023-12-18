@@ -1,4 +1,4 @@
-import { GetAccessTokenSpotify } from "./SpotifyApi.js";
+import { GetAccessTokenSpotify } from "./Token.js";
 
 const spotifyAdoId = '6mEQK9m2krja6X1cfsAjfl'
 

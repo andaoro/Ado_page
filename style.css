@@ -131,6 +131,7 @@ header img {
     height: auto;
     object-fit: cover;
     filter: brightness(0.75);
+    position: relative;
     z-index: -1;
 }
 
@@ -148,4 +149,18 @@ header img {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+}
+
+.flechas{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    font-size: 100px;
+    color: red;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin: auto;
 }
