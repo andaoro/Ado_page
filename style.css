@@ -116,13 +116,14 @@ header img {
 }
 
 .topSongs{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     transition: transform 0.5s ease-in-out;
+    gap: 20px;
 }
 
 .card_songs{
     position: relative;
-    min-width: 500px;
     height: auto;
 }
 
@@ -146,21 +147,5 @@ header img {
 
 .top{
     width: 100%;
-    overflow: hidden;
     position: relative;
-    margin: 0 auto;
-}
-
-.flechas{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    font-size: 100px;
-    color: red;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    margin: auto;
 }

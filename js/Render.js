@@ -28,7 +28,7 @@ async function RenderTopTracks(){
         const data = await GetTopTracks()
         const topSongs = document.getElementById('top')
 
-        console.log(data)
+        console.log(data.tracks)
 
         if (data) {
             data.tracks.forEach(track => {
@@ -47,11 +47,13 @@ async function RenderTopTracks(){
                 //VALORES
                 image_card.src = track.album.images[0].url
                 song_name.innerHTML = track.name
+                previewAudio.play = track.external_urls.spotify
                 
                 
                 //APPENDCHILDS
                 card_track.appendChild(image_card)
                 card_track.appendChild(song_name)
+                topSongs.appendChild(previewAudio)
                 topSongs.appendChild(card_track)
             });
         }
